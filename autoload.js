@@ -28,6 +28,7 @@ function loadExternalResource(url, type) {
 Promise.all([
 	loadExternalResource(live2d_path + "waifu.css", "css"),
 	loadExternalResource(live2d_path + "live2d.min.js", "js"),
+	loadExternalResource(live2d_path + "waifu-tips.js", "js")
 ]).then(() => {
 	initWidget(live2d_path + "waifu-tips.json", "https://live2d.fghrsh.net/api");
 });
